@@ -1,2 +1,2 @@
-# Flickr30k-Counterfactuals
+# CounterCurate
 We will provide code later for our approach of data curation for both physical and semantic counterfactuals.
