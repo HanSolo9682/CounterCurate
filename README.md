@@ -1,2 +1,4 @@
 # CounterCurate
-We will provide code later for our approach of data curation for both physical and semantic counterfactuals.
+
+
+Code coming soon... for the data curation pipeline of both physical and semantic counterfactual image-caption pairs.
