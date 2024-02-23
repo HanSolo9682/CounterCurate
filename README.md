@@ -50,3 +50,24 @@ to copy all the original images into their respective positions in the `train_da
 
 ## Sample Data
 It is to note that the sample data files have specific path formats (such as `../../train_data`). This is because of the testing environment we evaluated CounterCurate on. Please feel free alter the file paths.
+
+## Citation
+
+If you find CounterCurate useful for your research and applications, please cite using this BibTeX:
+```bibtex
+@article{zhang2024countercurate,
+  title={CounterCurate: Enhancing Physical and Semantic Visio-Linguistic Compositional Reasoning via Counterfactual Examples},
+  author={Zhang, Jianrui and Cai, Mu and Xie, Tengyang and Lee, Yong Jae},
+  journal={arXiv preprint arXiv:2402.13254},
+  year={2024}
+}
+```
+
+
+
+## Acknowledgement
+
+- [CLIP](https://openai.com/research/clip): the contrastive multimodal model we utilized. 
+
+- [LLaVa](https://llava-vl.github.io/):  the generative multimodal model we utilized. 
+
