@@ -1,7 +1,7 @@
 import json
 import os
 
-pointqa_path = "./pointingqa"
+pointqa_path = "../datasets/pointingqa"
 output_folder = "."
 with open(os.path.join(pointqa_path, "Datasets", "LookTwiceQA", "looktwiceqa_dataset.json"), 'r') as f:
     ds = json.load(f)
