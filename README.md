@@ -36,7 +36,7 @@ to copy all the original images into their respective positions in the `train_da
 - `gpt4v_dalle.py`: bridges between GPT-4V and DALLE-3 by filtering and converting GPT's response to be ready to be fed into DALLE;
 - `gpt4v_updown_gen.py`: generates expanded prompts for GLIGEN;
 - `gligen_inference_count.py`: You can use this file to reproduce our data curation for Flickr30k-Counting;
-- `gligen_inference_up_down.py`: You can use this file to reproduce our data curation for Flickr30k-Position's up-down subset;
+- `gligen_inference_up_down.py`: You can use this file to reproduce our data curation for Flickr30k-Position's up-down subset.
 
 ## Benchmarking
 - `prep_count_benchmark.py`: creates our simple benchmark testing model's counting capabilities, saved to a file `vg_dict.json`;
@@ -44,16 +44,15 @@ to copy all the original images into their respective positions in the `train_da
 - `CLIP_test_counting.py`: uses Open-CLIP to test a CLIP model's counting capabilities with `vg_dict.json`;
 - `llava_evaluate_counting.py`: evaluates a LLaVA model's counting capabilities with `vg_dict.json`;
 - `llava_evaluate_position.py`: evaluates a LLaVA model's physical compositional understanding on Flickr30k-Positions;
-- `llava_evaluagte_sugarcrepe.py`: evaluates a LLaVA model's semantical compositional understanding on SugarCrepe;
+- `llava_evaluagte_sugarcrepe.py`: evaluates a LLaVA model's semantical compositional understanding on SugarCrepe.
 
 ## Training
 - `prep_clip_attr.py`: generates a csv file that OpenCLIP accepts as input training data for Flickr30k-Attributes;
 - `prep_clip_pos_count.py`: generates a csv file that OpenCLIP accepts as input training data for Flickr30k-Positions/Flickr30k-Counting;
 - `prep_training_data_llava.py`: generates a json file that LLaVA accepts as input training data.
-- We will upload our OpenCLIP implementation later.
 
 ## Grouping
-
+In the paper, we used grouping to force CLIP models to learn the positive and negative image/caption pairs of the same index within the same batch to improve training efficiency and accuracy. Here, we provide two versions of grouping we used to train our CLIP models. The folder `train/grouping` is the general grouping strategy for positive/negative image-caption pairs, or when there is only one positive and one negative per item; the folder `train/grouping_attr` is specifically taylored for training our model on Flickr30k-Attributes, where each positive (original) image-caption pair has 2-3 negative counterfactuals (noun, adjective, reverse). Both folders contain a `data.py` and a `train.py`. To reproduce, please replace the files under your OpenClip repository `open_clip/src/training/.../py` accordingly. 
 
 ## Sample Data
 It is to note that the sample data files have specific path formats (such as `../../train_data`). This is because of the testing environment we evaluated CounterCurate on. Please feel free alter the file paths.
