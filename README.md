@@ -1,4 +1,4 @@
-# CounterCurate
+# CounterCurate [ACL 2024 Findings]
 
 
 This is the implementation of CounterCurate, the data curation pipeline of both physical and semantic counterfactual image-caption pairs.
@@ -64,7 +64,7 @@ If you find CounterCurate useful for your research and applications, please cite
 @article{zhang2024countercurate,
   title={CounterCurate: Enhancing Physical and Semantic Visio-Linguistic Compositional Reasoning via Counterfactual Examples},
   author={Zhang, Jianrui and Cai, Mu and Xie, Tengyang and Lee, Yong Jae},
-  journal={arXiv preprint arXiv:2402.13254},
+  journal={Findings of the Association for Computational Linguistics: ACL 2024},
   year={2024}
 }
 ```
