@@ -44,7 +44,7 @@ to copy all the original images into their respective positions in the `train_da
 - `CLIP_test_counting.py`: uses Open-CLIP to test a CLIP model's counting capabilities with `vg_dict.json`;
 - `llava_evaluate_counting.py`: evaluates a LLaVA model's counting capabilities with `vg_dict.json`;
 - `llava_evaluate_position.py`: evaluates a LLaVA model's physical compositional understanding on Flickr30k-Positions;
-- `llava_evaluagte_sugarcrepe.py`: evaluates a LLaVA model's semantical compositional understanding on SugarCrepe.
+- `llava_evaluate_sugarcrepe.py`: evaluates a LLaVA model's semantical compositional understanding on SugarCrepe.
 
 ## Training
 - `prep_clip_attr.py`: generates a csv file that OpenCLIP accepts as input training data for Flickr30k-Attributes;
